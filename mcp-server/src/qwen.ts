@@ -135,6 +135,7 @@ server.tool(
   checkQwenTaskStatus
 );
 
+/* v8 ignore start */
 async function startServer() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
@@ -143,5 +144,6 @@ async function startServer() {
 if (process.env.NODE_ENV !== 'test') {
   startServer();
 }
+/* v8 ignore stop */
 
 export default server;
