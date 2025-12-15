@@ -20,22 +20,20 @@ This repository contains the **Qwen Extension** for the Gemini CLI. It enables a
 1.  **Clone the repository:**
     ```bash
     git clone <repository-url>
-    cd gemini-cli-qwen
     ```
 
 2.  **Build the MCP Server:**
     Navigate to the server directory and build the project:
     ```bash
-    cd gemini-cli-extensions/qwen/mcp-server
+    cd mcp-server
     npm install
     npm run build
     ```
 
 3.  **Install the Extension:**
-    Return to the project root and install the extension using the Gemini CLI:
+    Install the extension using the Gemini CLI:
     ```bash
-    # From the project root
-    gemini extensions install ./gemini-cli-extensions/qwen
+    gemini extensions install .
     ```
 
 ## Usage
@@ -56,9 +54,7 @@ To check the progress of a running task or view the results of a completed one:
 ```
 
 ## Directory Structure
-
 ```
-gemini-cli-extensions/qwen/
 ├── QWEN.md                 # Context file for Gemini
 ├── commands/
 │   └── qwen.toml           # Command definition
