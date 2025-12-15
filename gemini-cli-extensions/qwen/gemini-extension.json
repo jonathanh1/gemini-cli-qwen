@@ -1,0 +1,13 @@
+{
+  "name": "gemini-cli-qwen",
+  "version": "0.1.0",
+  "contextFileName": "QWEN.md",
+  "mcpServers": {
+    "qwenServer": {
+      "command": "node",
+      "args": [
+        "${extensionPath}/mcp-server/dist/qwen.js"
+      ]
+    }
+  }
+}
